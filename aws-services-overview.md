@@ -2,7 +2,6 @@
 Descriptions of available services.
 
 ---
-## BRIEF
 
 | Compute | Summary |
 | :--: | :-- |
@@ -145,83 +144,85 @@ Descriptions of available services.
 | AWS IoT | -- |
 <br>
 
+## Compute
 
+### EC2
+### Auto Scaling
+### EC2 Container Service
 
-## EXPANSIVE
+#### Docs
 
-### Compute
-
-#### EC2
-#### Auto Scaling
-#### EC2 Container Service
-
-*Subheading*
+###### *Subheading*
 
 Lorem Ipsum Bla Bla
 
-*Subheading*
+#### Practical
+
+###### *Subheading*
 
 Lorem Ipsum Bla Bla
 
-#### ELB
-#### Elastic Beanstalk
-#### Lambda
-#### Lightsail
-#### Batch
+### ELB
+### Elastic Beanstalk
+### Lambda
+### Lightsail
+### Batch
 
 ---
 
-### Storage
+## Storage
 
-#### S3
-#### Elastic Block Storage
-#### CloudFront
-#### Glacier
-#### Storage Gateway
-#### Elastic File System
-
----
-
-### Migration
-
-#### DMS
-#### Server Migration
-#### Snowball
+### S3
+### Elastic Block Storage
+### CloudFront
+### Glacier
+### Storage Gateway
+### Elastic File System
 
 ---
 
-### Database
+## Migration
 
-#### RDS
-#### ElastiCache
-#### DynamoDB
-#### Redshift
+### DMS
+### Server Migration
+### Snowball
 
 ---
 
-### Networking & Content Delivery
+# Database
 
-#### VPC
-#### DirectConnect
-#### Route 53
+## RDS
+## ElastiCache
+## DynamoDB
+## Redshift
 
-*Domain Registration*
+---
+
+## Networking & Content Delivery
+
+### VPC
+### DirectConnect
+### Route 53
+
+#### Docs
+
+###### *Domain Registration*
 
 Allows registering new domain names and transferring previously registered domain names.
 
-*DNS Service*
+###### *DNS Service*
 
 Routes internet traffic to applications and other AWS services by translating domain names into IP addresses for newly and previously registered domains.
 
-*Health Checking*
+###### *Health Checking*
 
 Health checks monitor health of resources
 
-*Hosted Zones*
+###### *Hosted Zones*
 
 A collection of resource record sets hosted by R53 that are managed under a single domain name with the same suffix
 
-*Supported DNS Resource Record Types*
+###### *Supported DNS Resource Record Types*
   - A : Value is an IPv4 address in dotted decimal notation
   - AAAA : Value is an IPv6 address in colon-separated hexidecimal format
   - CNAME : Value is a domain name
@@ -233,130 +234,134 @@ A collection of resource record sets hosted by R53 that are managed under a sing
   - SRV : Value consists of 4 space-separated values
   - TXT : Record contains a space-separated list of double-quoted strings
 
-*DNS Constraints and Behaviors*
+###### *DNS Constraints and Behaviors*
 
   - Max Response Size : Responses sent over UDP are limited to 512 bytes. If resolver supports EDNS0, R53 permits responses up to 4096 bytes over UDP without truncation.
   - Authoritative Section Processing : R53 appends NS resource record set for the relevant hosted zone to authority section of DNS response for successful queries, whereas R53 appends start of SOA record on failed queries.
   - Additional Section Processing : R53 appends resource records to the Additional section
 
-*R53 Pricing*
+###### *R53 Pricing*
 
   Pay only for hosted zones configured and number of queries R53 answers.
 
----
+#### Practical
 
-### Management Tools
-
-#### CloudWatch
-#### CloudFormation
-#### Config
-#### CloudTrail
-#### Service Catalog
-#### OpsWorks
-#### Trusted Advisor
-#### Managed Services
-#### Application Discovery Service
+Lorem Ipsum Bla Bla
 
 ---
 
-### Security, Identity & Compliance
+## Management Tools
 
-#### IAM
-#### Certificate Manager
-#### Directory Service
-#### WAF and Shield
-#### KMS
-#### Inspector
-#### Compliance Reports
-
----
-
-### Mobile Services
-
-#### Mobile Hub
-#### Device Farm
-#### Cognito
-#### Mobile Analytics
-#### Pinpoint
+### CloudWatch
+### CloudFormation
+### Config
+### CloudTrail
+### Service Catalog
+### OpsWorks
+### Trusted Advisor
+### Managed Services
+### Application Discovery Service
 
 ---
 
-### Messaging
+## Security, Identity & Compliance
 
-#### SNS
-#### SQS
-#### SES
-
----
-
-### Application Services
-
-#### API Gateway
-#### Elastic Transcoder
-#### SWF
-#### Step Functions
+### IAM
+### Certificate Manager
+### Directory Service
+### WAF and Shield
+### KMS
+### Inspector
+### Compliance Reports
 
 ---
 
-### Desktop & App Streaming
+## Mobile Services
 
-#### WorkSpaces
-#### AppStream 2.0
-
----
-
-### Game Development
-
-#### GameLift
+### Mobile Hub
+### Device Farm
+### Cognito
+### Mobile Analytics
+### Pinpoint
 
 ---
 
-### Business Productivity
+## Messaging
 
-#### WorkDocs
-#### WorkMail
-
----
-
-### Developer Tools
-
-#### CodeCommit
-#### CodeBuild
-#### CodeDeploy
-#### CodePipeline
+### SNS
+### SQS
+### SES
 
 ---
 
-### Analytics
+## Application Services
 
-#### EMR
-#### Elasticsearch Service
-#### Data Pipeline
-#### Kinesis
-#### Athena
-#### CloudSearch
-#### QuickSight
+### API Gateway
+### Elastic Transcoder
+### SWF
+### Step Functions
 
 ---
 
-### Artificial Intelligence
+## Desktop & App Streaming
 
-#### EMR
-#### Elasticsearch Service
-#### Data Pipeline
-#### Kinesis
-#### Athena
-#### CloudSearch
-#### QuickSight
-#### Lex
-#### Polly
-#### Rekognition
-#### Machine Learning
+### WorkSpaces
+### AppStream 2.0
 
 ---
 
-### Internet of Things
+## Game Development
 
-#### AWS IoT
+### GameLift
+
+---
+
+## Business Productivity
+
+### WorkDocs
+### WorkMail
+
+---
+
+## Developer Tools
+
+### CodeCommit
+### CodeBuild
+### CodeDeploy
+### CodePipeline
+
+---
+
+## Analytics
+
+### EMR
+### Elasticsearch Service
+### Data Pipeline
+### Kinesis
+### Athena
+### CloudSearch
+### QuickSight
+
+---
+
+## Artificial Intelligence
+
+### EMR
+### Elasticsearch Service
+### Data Pipeline
+### Kinesis
+### Athena
+### CloudSearch
+### QuickSight
+### Lex
+### Polly
+### Rekognition
+### Machine Learning
+
+---
+
+## Internet of Things
+
+### AWS IoT
 
 ---
