@@ -144,37 +144,98 @@ Descriptions of available services.
 | AWS IoT | -- |
 <br>
 
-## Compute
+
+---
+
+## COMPUTE
 
 ### EC2
 ### Auto Scaling
 ### EC2 Container Service
 
-#### Docs
+  #### Docs
 
-###### *Subheading*
+  ###### *Subheading*
 
-Lorem Ipsum Bla Bla
+  Lorem Ipsum Bla Bla
 
-#### Practical
+  #### Practical
 
-###### *Subheading*
-
-Lorem Ipsum Bla Bla
+  ###### *Subheading*
+  - https://medium.com/production-ready/a-little-story-about-amazon-ecs-systemd-and-chaos-monkey-8bc7d1b5778?utm_source=clouddevweekly&utm_medium=email
+  - https://aws.amazon.com/blogs/compute/introducing-amazon-ecs-task-placement-policies/
+  - https://aws.amazon.com/blogs/compute/amazon-ec2-container-service-at-aws-reinvent-2016-wrap-up/
+  - https://aws.amazon.com/blogs/compute/introducing-blox-from-amazon-ec2-container-service/
+  - 
 
 ### ELB
+
+  #### Docs
+
+  ###### *Subheading*
+
+  Lorem Ipsum Bla Bla
+
+  #### Practical
+
+  ###### *Subheading*
+  - https://www.usenix.org/conference/lisa16/conference-program/presentation/shuff?utm_source=webopsweekly&utm_medium=email
+
 ### Elastic Beanstalk
 ### Lambda
+
+  #### Docs
+
+  ###### *Subheading*
+
+  Lorem Ipsum Bla Bla
+
+  #### Practical
+
+  ###### *Subheading*
+  - http://blog.ryankelly.us/2016/08/07/going-serverless-with-aws-lambda-and-api-gateway.html?utm_source=clouddevweekly&utm_medium=email
+  - https://www.dynatrace.com/blog/micro-services-when-micro-becomes-nano/?utm_source=webopsweekly&utm_medium=email
+  - https://aws.amazon.com/blogs/compute/managing-your-aws-resources-through-a-serverless-policy-engine/
+  - https://aws.amazon.com/blogs/compute/scripting-languages-for-aws-lambda-running-php-ruby-and-go/
+  - https://aws.amazon.com/blogs/compute/serverless-at-reinvent-2016-wrap-up/
+  -
+
 ### Lightsail
 ### Batch
 
 ---
 
-## Storage
+## STORAGE
 
 ### S3
+
+  #### Docs
+
+  ###### *Subheading*
+
+  Lorem Ipsum Bla Bla
+
+  #### Practical
+
+  ###### *Subheading*
+  - https://www.sumologic.com/aws/s3/10-things-might-not-know-using-s3/?utm_source=webopsweekly&utm_medium=email
+  -
+
 ### Elastic Block Storage
 ### CloudFront
+
+  #### Docs
+
+  ###### *Subheading*
+
+  Lorem Ipsum Bla Bla
+
+  #### Practical
+
+  ###### *Subheading*
+  - https://aws.amazon.com/about-aws/whats-new/2016/09/amazon-cloudfront-now-supports-http2/?utm_source=clouddevweekly&utm_medium=email
+  -
+
 ### Glacier
 ### Storage Gateway
 ### Elastic File System
@@ -189,68 +250,85 @@ Lorem Ipsum Bla Bla
 
 ---
 
-# Database
+# DATABSE
 
 ## RDS
+
+  #### Docs
+
+  ###### *Subheading*
+
+  Lorem Ipsum Bla Bla
+
+  #### Practical
+
+  ###### *Subheading*
+  - http://www.emind.co/blog/aws-aurora-vs-aws-rds-mysql-checklist/?utm_source=clouddevweekly&utm_medium=email
+  -
+
 ## ElastiCache
 ## DynamoDB
 ## Redshift
 
 ---
 
-## Networking & Content Delivery
+## NETWORKING & CONTENT DELIVERY
 
 ### VPC
 ### DirectConnect
 ### Route 53
 
-#### Docs
+  #### Docs
 
-###### *Domain Registration*
+  ###### *Domain Registration*
 
-Allows registering new domain names and transferring previously registered domain names.
+  Allows registering new domain names and transferring previously registered domain names.
 
-###### *DNS Service*
+  ###### *DNS Service*
 
-Routes internet traffic to applications and other AWS services by translating domain names into IP addresses for newly and previously registered domains.
+  Routes internet traffic to applications and other AWS services by translating domain names into IP addresses for newly and previously registered domains.
 
-###### *Health Checking*
+  ###### *Health Checking*
 
-Health checks monitor health of resources
+  Health checks monitor health of resources
 
-###### *Hosted Zones*
+  ###### *Hosted Zones*
 
-A collection of resource record sets hosted by R53 that are managed under a single domain name with the same suffix
+  A collection of resource record sets hosted by R53 that are managed under a single domain name with the same suffix
 
-###### *Supported DNS Resource Record Types*
-  - A : Value is an IPv4 address in dotted decimal notation
-  - AAAA : Value is an IPv6 address in colon-separated hexidecimal format
-  - CNAME : Value is a domain name
-  - MX : An MX record contains decimal number (priority) and domain name
-  - NS : Identifies the name servers for the hosted zone; a domain name
-  - PTR : Same as domain name
-  - SOA : Provides info about a dpomain and corresponding hosted zone
-  - SPF : Formerly used to verify email sender identity
-  - SRV : Value consists of 4 space-separated values
-  - TXT : Record contains a space-separated list of double-quoted strings
+  ###### *Supported DNS Resource Record Types*
+    - A : Value is an IPv4 address in dotted decimal notation
+    - AAAA : Value is an IPv6 address in colon-separated hexidecimal format
+    - CNAME : Value is a domain name
+    - MX : An MX record contains decimal number (priority) and domain name
+    - NS : Identifies the name servers for the hosted zone; a domain name
+    - PTR : Same as domain name
+    - SOA : Provides info about a dpomain and corresponding hosted zone
+    - SPF : Formerly used to verify email sender identity
+    - SRV : Value consists of 4 space-separated values
+    - TXT : Record contains a space-separated list of double-quoted strings
 
-###### *DNS Constraints and Behaviors*
+  ###### *DNS Constraints and Behaviors*
 
-  - Max Response Size : Responses sent over UDP are limited to 512 bytes. If resolver supports EDNS0, R53 permits responses up to 4096 bytes over UDP without truncation.
-  - Authoritative Section Processing : R53 appends NS resource record set for the relevant hosted zone to authority section of DNS response for successful queries, whereas R53 appends start of SOA record on failed queries.
-  - Additional Section Processing : R53 appends resource records to the Additional section
+    - Max Response Size : Responses sent over UDP are limited to 512 bytes. If resolver supports EDNS0, R53 permits responses up to 4096 bytes over UDP without truncation.
+    - Authoritative Section Processing : R53 appends NS resource record set for the relevant hosted zone to authority section of DNS response for successful queries, whereas R53 appends start of SOA record on failed queries.
+    - Additional Section Processing : R53 appends resource records to the Additional section
 
-###### *R53 Pricing*
+  ###### *R53 Pricing*
 
-  Pay only for hosted zones configured and number of queries R53 answers.
+    Pay only for hosted zones configured and number of queries R53 answers.
 
-#### Practical
+  #### Practical
 
-Lorem Ipsum Bla Bla
+  ###### *Subheading*
+  - https://aws.amazon.com/about-aws/whats-new/2016/08/amazon-route-53-announces-naptr-record-support-and-dns-query-test-tool/?utm_source=clouddevweekly&utm_medium=email
+  - https://www.awsarchitectureblog.com/2014/12/internet-routing.html
+  - https://www.awsarchitectureblog.com/2014/03/aws-and-compartmentalization.html
+  -
 
 ---
 
-## Management Tools
+## MANAGEMENT TOOLS
 
 ### CloudWatch
 ### CloudFormation
@@ -264,19 +342,40 @@ Lorem Ipsum Bla Bla
 
 ---
 
-## Security, Identity & Compliance
+## SSECURITY, IDENTITY & COMPLIANCE
 
 ### IAM
+
+  #### Docs
+
+  ###### *Subheading*
+
+  Lorem Ipsum Bla Bla
+
+  #### Practical
+
+  ###### *Subheading*
+  - https://medium.com/@kavehmz/use-aws-roles-and-secure-your-access-with-mfa-7a7babfd123a#.u1dor0764
+  - https://aws.amazon.com/blogs/security/the-top-20-most-viewed-aws-iam-documentation-pages-in-2016/
+  -
+
 ### Certificate Manager
 ### Directory Service
 ### WAF and Shield
 ### KMS
 ### Inspector
 ### Compliance Reports
+### General
+
+  #### Practical
+
+  ###### *Subheading*
+  - https://aws.amazon.com/blogs/security/the-top-10-most-downloaded-aws-security-and-compliance-documents-in-2016/
+  - https://aws.amazon.com/blogs/security/the-most-viewed-aws-security-blog-posts-in-2016/
 
 ---
 
-## Mobile Services
+## MOBILE SERVICES
 
 ### Mobile Hub
 ### Device Farm
@@ -286,7 +385,7 @@ Lorem Ipsum Bla Bla
 
 ---
 
-## Messaging
+## MESSAGING
 
 ### SNS
 ### SQS
@@ -294,48 +393,100 @@ Lorem Ipsum Bla Bla
 
 ---
 
-## Application Services
+## APPLICATION SERVICES
 
 ### API Gateway
+
+  #### Docs
+
+  ###### *Subheading*
+
+  Lorem Ipsum Bla Bla
+
+  #### Practical
+
+  ###### *Subheading*
+  - http://blog.ryankelly.us/2016/08/07/going-serverless-with-aws-lambda-and-api-gateway.html?utm_source=clouddevweekly&utm_medium=email
+  -
+
 ### Elastic Transcoder
 ### SWF
 ### Step Functions
 
 ---
 
-## Desktop & App Streaming
+## DESKTOP & APP STREAMING
 
 ### WorkSpaces
 ### AppStream 2.0
 
 ---
 
-## Game Development
+## GAME DEVELOPMENT
 
 ### GameLift
 
 ---
 
-## Business Productivity
+## BUSINESS PRODUCTIVITY
 
 ### WorkDocs
 ### WorkMail
 
 ---
 
-## Developer Tools
+## DEVELOPER TOOLS
 
 ### CodeCommit
+
+  #### Docs
+
+  ###### *Subheading*
+
+  Lorem Ipsum Bla Bla
+
+  #### Practical
+
+  ###### *Subheading*
+  - https://aws.amazon.com/blogs/devops/introducing-git-credentials-a-simple-way-to-connect-to-aws-codecommit-repositories-using-a-static-user-name-and-password/
+  -
+
 ### CodeBuild
 ### CodeDeploy
 ### CodePipeline
 
+  #### Docs
+
+  ###### *Subheading*
+
+  Lorem Ipsum Bla Bla
+
+  #### Practical
+
+  ###### *Subheading*
+  - https://aws.amazon.com/blogs/devops/integrating-git-with-aws-codepipeline/
+  -
+
 ---
 
-## Analytics
+## ANALYTICS
 
 ### EMR
 ### Elasticsearch Service
+
+  #### Docs
+
+  ###### *Subheading*
+
+  Lorem Ipsum Bla Bla
+
+  #### Practical
+
+  ###### *Subheading*
+  - https://grey-boundary.io/field-notes-elasticsearch-at-petabyte-scale-on-aws/?utm_source=clouddevweekly&utm_medium=email
+  - https://aws.amazon.com/about-aws/whats-new/2016/07/amazon-elasticsearch-service-now-supports-elasticsearch-2-3/?utm_source=clouddevweekly&utm_medium=email
+  -
+
 ### Data Pipeline
 ### Kinesis
 ### Athena
@@ -344,10 +495,9 @@ Lorem Ipsum Bla Bla
 
 ---
 
-## Artificial Intelligence
+## ARTIFICIAL INTELLIGENCE
 
 ### EMR
-### Elasticsearch Service
 ### Data Pipeline
 ### Kinesis
 ### Athena
@@ -360,7 +510,7 @@ Lorem Ipsum Bla Bla
 
 ---
 
-## Internet of Things
+## INTERNET OF THINGS
 
 ### AWS IoT
 
