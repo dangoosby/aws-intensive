@@ -1,9 +1,9 @@
-## ELB
+## VPC
 
 ### Practical Notes
 
 ##### *Topic Subheading*
-- https://www.usenix.org/conference/lisa16/conference-program/presentation/shuff?utm_source=webopsweekly&utm_medium=email
+- https://www.cloudamqp.com/blog/2014-11-14-amazon-vpc-peering.html
 
 ---
 

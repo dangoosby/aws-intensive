@@ -1,9 +1,9 @@
-## ELB
+## SQS
 
 ### Practical Notes
 
 ##### *Topic Subheading*
-- https://www.usenix.org/conference/lisa16/conference-program/presentation/shuff?utm_source=webopsweekly&utm_medium=email
+- http://blog.turret.io/rabbitmq-vs-amazon-sqs-a-short-comparison/
 
 ---
 
