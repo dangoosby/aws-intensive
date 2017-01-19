@@ -598,19 +598,67 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="vpc">VPC</h2>
-<h3 id="practical-notes">Practical Notes</h3>
-<h5 id="topic-subheading"><em>Topic Subheading</em></h5>
+                                <h1 id="vpc">VPC</h1>
+<hr>
+<h2 id="practical-notes">Practical Notes</h2>
+<h3 id="vpc-peering"><em>VPC Peering</em></h3>
 <ul>
 <li><a href="https://www.cloudamqp.com/blog/2014-11-14-amazon-vpc-peering.html" target="_blank">https://www.cloudamqp.com/blog/2014-11-14-amazon-vpc-peering.html</a></li>
 </ul>
 <hr>
-<h3 id="documentation-notes">Documentation Notes</h3>
-<h5 id="topic-subheading"><em>Topic Subheading</em></h5>
+<h2 id="documentation-notes">Documentation Notes</h2>
+<h3 id="networking-in-vpc"><em>Networking in VPC</em></h3>
+<p>Lorem Ipsum Bla Bla</p>
+<h4 id="ip-addressing"><em>IP Addressing</em></h4>
+<p>Lorem Ipsum Bla Bla</p>
+<h4 id="network-interfaces"><em>Network Interfaces</em></h4>
+<p>Lorem Ipsum Bla Bla</p>
+<h4 id="route-tables"><em>Route Tables</em></h4>
+<p>Lorem Ipsum Bla Bla</p>
+<h4 id="internet-gateways"><em>Internet Gateways</em></h4>
+<p>Lorem Ipsum Bla Bla</p>
+<h4 id="nat"><em>NAT</em></h4>
+<p>Lorem Ipsum Bla Bla</p>
+<h4 id="dhcp-option-sets"><em>DHCP Option Sets</em></h4>
+<p>Lorem Ipsum Bla Bla</p>
+<h4 id="dns"><em>DNS</em></h4>
+<p>Lorem Ipsum Bla Bla</p>
+<h4 id="vpc-peering"><em>VPC Peering</em></h4>
+<p>A network connection between two VPCs that enables traffic routing in-between using private IP addresses allowing instances to communicate as if within the same network.</p>
+<h5 id="basics"><em>Basics</em></h5>
+<h6 id="connection-lifecycle"><em>Connection Lifecycle</em></h6>
+<ul>
+<li>Initiating-Request: request for VPC peering connection initiated; can <em>fail</em> or <em>pending-acceptance</em>.</li>
+<li>Failed: request for VPC peering connection failed; cannot be accepted or rejected.</li>
+<li>Pending-Acceptance: VPC peering connection request awaiting acceptance from owner of peer VPC; owner can delete, accept or reject request.</li>
+<li>Expired: request expired and no action can be taken on it.</li>
+<li>Rejected: owner of VPC rejected <em>pending-acceptance</em> connection request.</li>
+<li>Provisioning: request has been accepted moving into <em>active</em> state.</li>
+<li>Active: VPC peering connection is active.</li>
+<li>Deleted: <em>active</em> peering connection has been deleted by either owner or <em>pending-acceptance</em> request has been deleted.</li>
+</ul>
+<h6 id="limitations"><em>Limitations</em></h6>
+<ul>
+<li>Cannot create a peering connection that have matching or overlapping IPv4 or IPv6 CIDR blocks.</li>
+<li>VPCs must be in same region.</li>
+<li>Number of active or pending connections limited per VPC.</li>
+<li>Transitive peering relationships not supported; one-to-one connections only.</li>
+<li>Only one peering connection between same two VPCs</li>
+<li>A placement group can span peered VPCs without full-bisection bandwidth between instances in peered VPCs.</li>
+<li>Unicast reverse path forwarding in VPC peering connections not supported.</li>
+<li>IPv6 communication between enabled resources on either side of connection not automatic.</li>
+</ul>
+<h5 id="connections"><em>Connections</em></h5>
+<h5 id="configurations"><em>Configurations</em></h5>
+<h5 id="invalid-connection-configurations"><em>Invalid Connection Configurations</em></h5>
+<h4 id="vpc-endpoints"><em>VPC Endpoints</em></h4>
 <p>Lorem Ipsum Bla Bla</p>
 <hr>
-<h3 id="infrastructure-as-code-examples">Infrastructure as Code Examples</h3>
-<h5 id="aws-cli"><em>AWS CLI</em></h5>
+<h2 id="infrastructure-as-code-examples">Infrastructure as Code Examples</h2>
+<h3 id="aws-cli"><em>AWS CLI</em></h3>
+<ul>
+<li><a href="http://docs.aws.amazon.com/cli/latest/reference/ec2/index.html" target="_blank">http://docs.aws.amazon.com/cli/latest/reference/ec2/index.html</a></li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -621,14 +669,144 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align:center">accept-vpc-peering-connection</td>
+<td>----</td>
 <td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">associate-vpc-cidr-block</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">attach-classic-link-vpc</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">create-vpc</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">create-vpc-endpoint</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">create-vpc-peering-connection</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">delete-vpc</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">delete-vpc-endpoints</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">delete-vpc-peering-connection</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">describe-vpc-attribute</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">describe-vpc-classic-link</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">describe-vpc-classic-link-dns-support</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">describe-vpc-endpoint-services</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">describe-vpc-endpoints</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">describe-vpc-peering-connections</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">describe-vpcs</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">detach-classic-link-vpc</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">disable-vpc-classic-link</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">disable-vpc-classic-link-dns-support</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">disassociate-vpc-cidr-block</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">enable-vpc-classic-link</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">enable-vpc-classic-link-dns-support</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">modify-vpc-attribute</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">modify-vpc-endpoint</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">modify-vpc-peering-connection-options</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">move-address-to-vpc</td>
+<td>----</td>
+<td style="text-align:center">----</td>
+</tr>
+<tr>
+<td style="text-align:center">reject-vpc-peering-connection</td>
 <td>----</td>
 <td style="text-align:center">----</td>
 </tr>
 </tbody>
 </table>
-<h5 id="boto3"><em>Boto3</em></h5>
-<h5 id="terraform"><em>Terraform</em></h5>
+<h3 id="boto3"><em>Boto3</em></h3>
+<h3 id="terraform"><em>Terraform</em></h3>
 
                                 
                                 </section>
@@ -672,7 +850,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"VPC","level":"2.9","depth":1,"next":{"title":"S3","level":"3.1","depth":1,"path":"services/storage/--/README.md","ref":"./services/storage/--/README.md","articles":[]},"previous":{"title":"Batch","level":"2.8","depth":1,"path":"services/compute/batch/README.md","ref":"./services/compute/batch/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"services/compute/vpc/README.md","mtime":"2017-01-17T20:50:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-17T20:59:40.156Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"VPC","level":"2.9","depth":1,"next":{"title":"S3","level":"3.1","depth":1,"path":"services/storage/--/README.md","ref":"./services/storage/--/README.md","articles":[]},"previous":{"title":"Batch","level":"2.8","depth":1,"path":"services/compute/batch/README.md","ref":"./services/compute/batch/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"services/compute/vpc/README.md","mtime":"2017-01-18T22:33:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-18T17:11:12.053Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
