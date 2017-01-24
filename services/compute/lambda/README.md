@@ -1,8 +1,8 @@
-## Lambda
+# Lambda
 
-### Practical Notes
+## Practical Notes
 
-##### *Subheading*
+### *Topic Subheading*
 - http://blog.ryankelly.us/2016/08/07/going-serverless-with-aws-lambda-and-api-gateway.html?utm_source=clouddevweekly&utm_medium=email
 - https://www.dynatrace.com/blog/micro-services-when-micro-becomes-nano/?utm_source=webopsweekly&utm_medium=email
 - https://aws.amazon.com/blogs/compute/managing-your-aws-resources-through-a-serverless-policy-engine/
@@ -11,22 +11,22 @@
 
 ---
 
-### Documentation Notes
+## Documentation Notes
 
-##### *Subheading*
+### *Topic Subheading*
 
 Lorem Ipsum Bla Bla
 
 ---
 
-### Infrastructure as Code Examples
+## Infrastructure as Code Examples
 
-##### *AWS CLI*
+### *AWS CLI*
 
 | Command        | Options      | Example  |
 | :-------------:|------------- | :-----:  |
 | ---- | ---- | ---- |
 
-##### *Boto3*
+### *Boto3*
 
-##### *Terraform*
+### *Terraform*

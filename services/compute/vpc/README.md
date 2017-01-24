@@ -4,7 +4,7 @@
 
 ## Practical Notes
 
-### *VPC Peering*
+### *VPC Peering and CloudAMQP VPC*
 - https://www.cloudamqp.com/blog/2014-11-14-amazon-vpc-peering.html
 
 ---
@@ -71,13 +71,21 @@ A network connection between two VPCs that enables traffic routing in-between us
 - Unicast reverse path forwarding in VPC peering connections not supported.
 - IPv6 communication between enabled resources on either side of connection not automatic.
 
-##### *Connections*
+##### *Working with VPC Peering Connections*
 
+###### *Creation and Acceptance*
+###### *Rejection*
+###### *Update Route Tables*
+###### *Reference VPC Security Groups*
+###### *Modify Peering Options*
+###### *Deletion*
+###### *Controlling Access to VPC Peering Connections*
 
+##### *VPC Peering Scenarios*
 
-##### *Configurations*
+##### *VPC Peering Configurations*
 
-##### *Invalid Connection Configurations*
+##### *Invalid VPC Peering Connection Configurations*
 
 #### *VPC Endpoints*
 
