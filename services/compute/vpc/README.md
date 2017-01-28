@@ -7,6 +7,12 @@
 ### *VPC Peering and CloudAMQP VPC*
 - https://www.cloudamqp.com/blog/2014-11-14-amazon-vpc-peering.html
 
+### *VPC Peering*
+- http://blog.celingest.com/en/2014/05/09/introduction-aws-vpc-peering/
+
+### *Security*
+- http://cloudacademy.com/blog/aws-bastion-host-nat-instances-vpc-peering-security/
+
 ---
 
 ## Documentation Notes
@@ -129,6 +135,6 @@ Lorem Ipsum Bla Bla
 | move-address-to-vpc | ---- | ---- |
 | reject-vpc-peering-connection | ---- | ---- |
 
-### *Boto3*
+### *NodeJS*
 
 ### *Terraform*

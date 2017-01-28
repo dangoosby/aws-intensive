@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../../storage/--/README.md" />
+    <link rel="next" href="../../networking-content-delivery/--/README.md" />
     
     
-    <link rel="prev" href="../batch/README.md" />
+    <link rel="prev" href="../../storage/--/README.md" />
     
 
     </head>
@@ -109,9 +109,9 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="../ec2/README.md">
+        <li class="chapter " data-level="2.1" data-path="../ec2/">
             
-                <span>
+                <a href="../ec2/">
             
                     
                     EC2
@@ -213,19 +213,6 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.9" data-path="./">
-            
-                <a href="./">
-            
-                    
-                    VPC
-            
-                </a>
-            
-
-            
-        </li>
-    
 
     
         
@@ -233,9 +220,9 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../../storage/--/README.md">
+        <li class="chapter " data-level="3.1" data-path="../../storage/s3/">
             
-                <span>
+                <a href="../../storage/s3/">
             
                     
                     S3
@@ -319,9 +306,9 @@
         
         
     
-        <li class="chapter " data-level="6.1" data-path="../../networking-content-delivery/--/README.md">
+        <li class="chapter active" data-level="6.1" data-path="./">
             
-                <span>
+                <a href="./">
             
                     
                     VPC
@@ -462,9 +449,9 @@
         
         
     
-        <li class="chapter " data-level="19.1" data-path="../../../certifications/associate/solutions-architect-associate/README.md">
+        <li class="chapter " data-level="19.1" data-path="../../../certifications/associate/solutions-architect-associate/">
             
-                <span>
+                <a href="../../../certifications/associate/solutions-architect-associate/">
             
                     
                     Solutions Architect Associate
@@ -601,9 +588,17 @@
                                 <h1 id="vpc">VPC</h1>
 <hr>
 <h2 id="practical-notes">Practical Notes</h2>
-<h3 id="vpc-peering"><em>VPC Peering</em></h3>
+<h3 id="vpc-peering-and-cloudamqp-vpc"><em>VPC Peering and CloudAMQP VPC</em></h3>
 <ul>
 <li><a href="https://www.cloudamqp.com/blog/2014-11-14-amazon-vpc-peering.html" target="_blank">https://www.cloudamqp.com/blog/2014-11-14-amazon-vpc-peering.html</a></li>
+</ul>
+<h3 id="vpc-peering"><em>VPC Peering</em></h3>
+<ul>
+<li><a href="http://blog.celingest.com/en/2014/05/09/introduction-aws-vpc-peering/" target="_blank">http://blog.celingest.com/en/2014/05/09/introduction-aws-vpc-peering/</a></li>
+</ul>
+<h3 id="security"><em>Security</em></h3>
+<ul>
+<li><a href="http://cloudacademy.com/blog/aws-bastion-host-nat-instances-vpc-peering-security/" target="_blank">http://cloudacademy.com/blog/aws-bastion-host-nat-instances-vpc-peering-security/</a></li>
 </ul>
 <hr>
 <h2 id="documentation-notes">Documentation Notes</h2>
@@ -648,9 +643,17 @@
 <li>Unicast reverse path forwarding in VPC peering connections not supported.</li>
 <li>IPv6 communication between enabled resources on either side of connection not automatic.</li>
 </ul>
-<h5 id="connections"><em>Connections</em></h5>
-<h5 id="configurations"><em>Configurations</em></h5>
-<h5 id="invalid-connection-configurations"><em>Invalid Connection Configurations</em></h5>
+<h5 id="working-with-vpc-peering-connections"><em>Working with VPC Peering Connections</em></h5>
+<h6 id="creation-and-acceptance"><em>Creation and Acceptance</em></h6>
+<h6 id="rejection"><em>Rejection</em></h6>
+<h6 id="update-route-tables"><em>Update Route Tables</em></h6>
+<h6 id="reference-vpc-security-groups"><em>Reference VPC Security Groups</em></h6>
+<h6 id="modify-peering-options"><em>Modify Peering Options</em></h6>
+<h6 id="deletion"><em>Deletion</em></h6>
+<h6 id="controlling-access-to-vpc-peering-connections"><em>Controlling Access to VPC Peering Connections</em></h6>
+<h5 id="vpc-peering-scenarios"><em>VPC Peering Scenarios</em></h5>
+<h5 id="vpc-peering-configurations"><em>VPC Peering Configurations</em></h5>
+<h5 id="invalid-vpc-peering-connection-configurations"><em>Invalid VPC Peering Connection Configurations</em></h5>
 <h4 id="vpc-endpoints"><em>VPC Endpoints</em></h4>
 <p>Lorem Ipsum Bla Bla</p>
 <hr>
@@ -805,7 +808,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="boto3"><em>Boto3</em></h3>
+<h3 id="nodejs"><em>NodeJS</em></h3>
 <h3 id="terraform"><em>Terraform</em></h3>
 
                                 
@@ -834,12 +837,12 @@
 
             
                 
-                <a href="../batch/README.md" class="navigation navigation-prev " aria-label="Previous page: Batch">
+                <a href="../../storage/--/README.md" class="navigation navigation-prev " aria-label="Previous page: Elastic File System">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../../storage/--/README.md" class="navigation navigation-next " aria-label="Next page: S3">
+                <a href="../../networking-content-delivery/--/README.md" class="navigation navigation-next " aria-label="Next page: DirectConnect">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -850,7 +853,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"VPC","level":"2.9","depth":1,"next":{"title":"S3","level":"3.1","depth":1,"path":"services/storage/--/README.md","ref":"./services/storage/--/README.md","articles":[]},"previous":{"title":"Batch","level":"2.8","depth":1,"path":"services/compute/batch/README.md","ref":"./services/compute/batch/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"services/compute/vpc/README.md","mtime":"2017-01-18T22:33:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-18T17:11:12.053Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"VPC","level":"6.1","depth":1,"next":{"title":"DirectConnect","level":"6.2","depth":1,"path":"services/networking-content-delivery/--/README.md","ref":"./services/networking-content-delivery/--/README.md","articles":[]},"previous":{"title":"Elastic File System","level":"3.5","depth":1,"path":"services/storage/--/README.md","ref":"./services/storage/--/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"services/compute/vpc/README.md","mtime":"2017-01-27T15:20:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-27T21:12:17.617Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

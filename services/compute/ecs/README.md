@@ -7,7 +7,7 @@
 - https://aws.amazon.com/blogs/compute/introducing-amazon-ecs-task-placement-policies/
 - https://aws.amazon.com/blogs/compute/amazon-ec2-container-service-at-aws-reinvent-2016-wrap-up/
 - https://aws.amazon.com/blogs/compute/introducing-blox-from-amazon-ec2-container-service/
--
+- https://segment.com/blog/rebuilding-our-infrastructure/
 
 ---
 
@@ -27,6 +27,6 @@ Lorem Ipsum Bla Bla
 | :-------------:|------------- | :-----:  |
 | ---- | ---- | ---- |
 
-##### *Boto3*
+##### *NodeJS*
 
 ##### *Terraform*

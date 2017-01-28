@@ -16,8 +16,8 @@ Intensive practice and study for AWS Certification exams
   - ansible provisioning code
 - **./< aws-resource >/aws-cli**
   - available-commands.md
-- **./< aws-resource >/boto3**
-  - boto3 practice scripts
+- **./< aws-resource >/NodeJS**
+  - NodeJS practice scripts
 
 **./exams**
 - **./solutions-architect-associate**

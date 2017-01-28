@@ -12,11 +12,10 @@
 * [EC2 Container Service](./services/compute/ecs/README.md)
 * [Lightsail](./services/compute/lightsail/README.md)
 * [Batch](./services/compute/batch/README.md)
-* [VPC](./services/compute/vpc/README.md)
 
 ### Storage
 
-* [S3](./services/storage/--/README.md)
+* [S3](./services/storage/s3/README.md)
 * [Elastic Block Storage](./services/storage/--/README.md)
 * [Glacier](./services/storage/--/README.md)
 * [Storage Gateway](./services/storage/--/README.md)
@@ -26,7 +25,7 @@
 ### Database
 ### Networking & Content Delivery
 
-* [VPC](./services/networking-content-delivery/--/README.md)
+* [VPC](./services/compute/vpc/README.md)
 * [DirectConnect](./services/networking-content-delivery/--/README.md)
 * [Route 53](./services/networking-content-delivery/route-53/README.md)
 * [CloudFront](./services/networking-content-delivery/--/README.md)

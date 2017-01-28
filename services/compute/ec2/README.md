@@ -1,8 +1,12 @@
-# Subject
+# EC2
+
+---
 
 ## Practical Notes
 
 ### *Topic Subheading*
+- http://cloudacademy.com/blog/aws-ec2-instance-types-explained/
+-
 
 #### *Subsubheading*
 
@@ -30,6 +34,6 @@ Lorem Ipsum Bla Bla
 | :-------------:|------------- | :-----:  |
 | ---- | ---- | ---- |
 
-#### *Boto3*
+#### *NodeJS*
 
 #### *Terraform*

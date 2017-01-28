@@ -1,5 +1,7 @@
 # Lambda
 
+---
+
 ## Practical Notes
 
 ### *Topic Subheading*
@@ -8,6 +10,9 @@
 - https://aws.amazon.com/blogs/compute/managing-your-aws-resources-through-a-serverless-policy-engine/
 - https://aws.amazon.com/blogs/compute/scripting-languages-for-aws-lambda-running-php-ruby-and-go/
 - https://aws.amazon.com/blogs/compute/serverless-at-reinvent-2016-wrap-up/
+- http://cloudacademy.com/blog/aws-lambda-news-reinvent-2016/
+- http://cloudacademy.com/blog/hands-on-aws-serverless-application-model/
+-
 
 ---
 
@@ -27,6 +32,6 @@ Lorem Ipsum Bla Bla
 | :-------------:|------------- | :-----:  |
 | ---- | ---- | ---- |
 
-### *Boto3*
+### *NodeJS*
 
 ### *Terraform*
