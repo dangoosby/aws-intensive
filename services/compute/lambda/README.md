@@ -12,7 +12,8 @@
 - https://aws.amazon.com/blogs/compute/serverless-at-reinvent-2016-wrap-up/
 - http://cloudacademy.com/blog/aws-lambda-news-reinvent-2016/
 - http://cloudacademy.com/blog/hands-on-aws-serverless-application-model/
--
+- https://medium.com/@gigq/using-swift-in-aws-lambda-6e2a67a27e03#.wgsztwp6n
+- http://gosparta.io/
 
 ---
 

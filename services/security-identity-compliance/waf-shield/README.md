@@ -1,4 +1,4 @@
-# Subject
+# WAF and Shield
 
 ---
 
@@ -30,6 +30,7 @@ Lorem Ipsum Bla Bla
 
 | Command        | Options      | Example  |
 | :-------------:|------------- | :-----:  |
+| create-byte-match-set | ---- | ---- |
 | ---- | ---- | ---- |
 
 #### *NodeJS*
