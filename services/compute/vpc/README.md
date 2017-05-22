@@ -13,42 +13,25 @@
 ### *Security*
 - http://cloudacademy.com/blog/aws-bastion-host-nat-instances-vpc-peering-security/
 
+
+
 ---
 
 ## Documentation Notes
 
+### *Basics*
+### *VPC and Subnets*
+### *Default VPC and Subnets*
+### *Security in VPC*
 ### *Networking in VPC*
 
-Lorem Ipsum Bla Bla
-
 #### *IP Addressing*
-
-Lorem Ipsum Bla Bla
-
 #### *Network Interfaces*
-
-Lorem Ipsum Bla Bla
-
 #### *Route Tables*
-
-Lorem Ipsum Bla Bla
-
 #### *Internet Gateways*
-
-Lorem Ipsum Bla Bla
-
 #### *NAT*
-
-Lorem Ipsum Bla Bla
-
 #### *DHCP Option Sets*
-
-Lorem Ipsum Bla Bla
-
 #### *DNS*
-
-Lorem Ipsum Bla Bla
-
 #### *VPC Peering*
 
 A network connection between two VPCs that enables traffic routing in-between using private IP addresses allowing instances to communicate as if within the same network.
@@ -88,14 +71,15 @@ A network connection between two VPCs that enables traffic routing in-between us
 ###### *Controlling Access to VPC Peering Connections*
 
 ##### *VPC Peering Scenarios*
-
 ##### *VPC Peering Configurations*
-
 ##### *Invalid VPC Peering Connection Configurations*
 
 #### *VPC Endpoints*
 
-Lorem Ipsum Bla Bla
+### *VPN Connections*
+### *Dedicated Instances*
+### *ClassicLink*
+### *VPC Limits*
 
 ---
 

@@ -45,6 +45,62 @@
 ### CERTIFICATIONS
 
 * [Solutions Architect Associate](./certifications/associate/solutions-architect-associate/README.md)
+  * Topics
+    * S3
+      * Glacier
+    * EC2
+      * EBS
+    * VPC
+      * Subnets
+      * Route Tables
+      * Internet Gateways
+      * DHCP
+      * EIPs
+      * ENIs
+      * Endpoints
+      * Peering
+      * Security Groups
+      * Network ACLs
+      * NAT
+      * VPG, CGWs, VPNs
+    * ELB, CloudWatch, and Auto Scaling
+    * IAM
+      * Principals
+      * Authentication
+      * Authorization
+      * Other Key Features
+    * Databases
+      * DB Primer
+      * RDS
+      * Redshift
+      * DynamoDB
+    * SQS, SWF, and SNS
+    * R53 and DNS
+    * Elasticache
+      * In-Memory caching
+    * Additional Key Services
+      * Storage and Content Delivery
+      * Security
+      * Analytics
+      * DevOps
+    * Security
+      * Shared Responsibility Model
+      * Compliance Program
+      * Global Infrastructure Security
+      * Account Security Features
+      * Cloud Service-Specific Security
+    * Risk and Compliance
+      * AWS Controls
+      * Risk and Compliance Program
+      * Reports, Certifications and 3rd Party Attestations
+    * Architecture Best Practices
+      * Design for Fauilure
+      * Implement Elasticity
+      * Leverage Different Storage Options
+      * Security in Every Layer
+      * Think Parallel
+      * Loose Coupling
+      * Constraints
 * [Developer Associate](./certifications/associate/--/README.md)
 * [SysOps Administrator Associate](./certifications/associate/--/README.md)
 * [Solutions Architect Professional](./certifications/professional/solutions-architect-associate/README.md)
